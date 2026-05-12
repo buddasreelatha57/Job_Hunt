@@ -11,7 +11,7 @@ import {
   FileText
 } from "lucide-react";
 
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.jpeg";
 
 export default function Sidebar({
   mobileOpen,
