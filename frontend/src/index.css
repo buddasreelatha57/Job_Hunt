@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth UI */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light mode background */
+body {
+  @apply bg-pink-50 text-black;
+}
+
+/* Dark mode */
+.dark body {
+  @apply bg-darkbg text-white;
+}
