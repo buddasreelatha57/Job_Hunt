@@ -1,49 +1,77 @@
-Job Hunt Tracker 🚀
+# Job Hunt Tracker 🚀
+
 A full-stack AI-powered Job Hunt Tracker application that helps users manage job applications, track interview progress, organize resumes, and automate parts of the job search process.
 
-📌 Features
-👤 Authentication
-User Registration & Login
-JWT Authentication
-Secure Password Hashing
-Protected Routes
-💼 Job Management
-Add New Job Applications
-Update Job Status
-Delete Applications
-Track Interview Stages
-Store Company Details
-Application Timeline Tracking
-🤖 AI Features
-AI Resume Assistance
-AI Job Suggestions
-AI Content Generation
-OpenAI API Integration
-🔔 Notifications
-Real-time Notifications
-Application Updates
-Reminder System
-📊 Dashboard
-Job Statistics
-Status Analytics
-Application Overview
-Progress Monitoring
-🛠️ Tech Stack
-Frontend
-React.js
-React Router DOM
-Axios
-Tailwind CSS
-Lucide React
-Backend
-Node.js
-Express.js
-MongoDB
-Mongoose
-bcrypt.js
-AI Integration
-OpenAI API
-📂 Project Structure
+---
+
+# 📌 Features
+
+## 👤 Authentication
+
+* User Registration & Login
+* JWT Authentication
+* Secure Password Hashing
+* Protected Routes
+
+## 💼 Job Management
+
+* Add New Job Applications
+* Update Job Status
+* Delete Applications
+* Track Interview Stages
+* Store Company Details
+* Application Timeline Tracking
+
+## 🤖 AI Features
+
+* AI Resume Assistance
+* AI Job Suggestions
+* AI Content Generation
+* OpenAI API Integration
+
+## 🔔 Notifications
+
+* Real-time Notifications
+* Application Updates
+* Reminder System
+
+## 📊 Dashboard
+
+* Job Statistics
+* Status Analytics
+* Application Overview
+* Progress Monitoring
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+* React.js
+* React Router DOM
+* Axios
+* Tailwind CSS
+* Lucide React
+
+## Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* bcrypt.js
+
+## AI Integration
+
+* OpenAI API
+
+---
+
+# 📂 Project Structure
+
+```bash
 job-tracker/
 │
 ├── frontend/
@@ -66,181 +94,334 @@ job-tracker/
 │
 ├── .gitignore
 ├── README.md
+|__ screenshots/
 └── package.json
-⚙️ Installation
-1️⃣ Clone Repository
+```
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/YOUR_USERNAME/Job_Hunt.git
 cd Job_Hunt
-2️⃣ Install Frontend Dependencies
+```
+
+---
+
+## 2️⃣ Install Frontend Dependencies
+
+```bash
 cd frontend
 npm install
-3️⃣ Install Backend Dependencies
+```
+
+---
+
+## 3️⃣ Install Backend Dependencies
+
+```bash
 cd ../backend
 npm install
-🔐 Environment Variables
-Create a .env file inside the backend folder.
+```
 
+---
+
+# 🔐 Environment Variables
+
+Create a `.env` file inside the backend folder.
+
+```env
 PORT=5000
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_jwt_secret
 OPENAI_API_KEY=your_openai_api_key
-⚠️ Never upload your .env file to GitHub.
+```
 
-▶️ Running the Project
-Start Backend
+⚠️ Never upload your `.env` file to GitHub.
+
+---
+
+# ▶️ Running the Project
+
+## Start Backend
+
+```bash
 cd backend
 npm start
+```
 
-Start Frontend
+---
+
+## Start Frontend
+
+```bash
 cd frontend
 npm start
+```
+
 Frontend runs on:
+
+```bash
 http://localhost:3000
+```
 
 Backend runs on:
+
+```bash
 http://localhost:5000
+```
 
-📡 API Endpoints
+---
 
-Authentication
-Method	Endpoint	Description
-POST	/api/auth/register	Register User
-POST	/api/auth/login	Login User
-Jobs
-Method	Endpoint	Description
-GET	/api/jobs	Get All Jobs
-POST	/api/jobs	Create Job
-PUT	/api/jobs/:id	Update Job
-DELETE	/api/jobs/:id	Delete Job
-🧠 AI Features
+# 📡 API Endpoints
+
+## Authentication
+
+| Method | Endpoint           | Description   |
+| ------ | ------------------ | ------------- |
+| POST   | /api/auth/register | Register User |
+| POST   | /api/auth/login    | Login User    |
+
+---
+
+## Jobs
+
+| Method | Endpoint      | Description  |
+| ------ | ------------- | ------------ |
+| GET    | /api/jobs     | Get All Jobs |
+| POST   | /api/jobs     | Create Job   |
+| PUT    | /api/jobs/:id | Update Job   |
+| DELETE | /api/jobs/:id | Delete Job   |
+
+---
+
+# 🧠 AI Features
+
 The application integrates with the OpenAI API to:
 
-Generate resume improvements
-Suggest job descriptions
-Create interview preparation content
-Assist in job search automation
+* Generate resume improvements
+* Suggest job descriptions
+* Create interview preparation content
+* Assist in job search automation
 
-🔒 Security Features
-JWT Token Authentication
-Password Encryption
-Environment Variable Protection
-Secure API Access
-Protected Routes
+---
 
-🚀 Deployment
-🌐 Frontend Deployment (Vercel)
-Push frontend code to GitHub
-Go to:
-https://vercel.com
-Import your GitHub repository
-Select the frontend folder
-Add environment variables if needed
-Click Deploy
+# 🔒 Security Features
 
-⚙️ Backend Deployment (Render)
-1️⃣ Push Backend to GitHub
+* Password Encryption
+* Environment Variable Protection
+* Secure API Access
+* Protected Routes
+
+---
+
+# 🚀 Deployment
+
+## 🌐 Frontend Deployment (Vercel)
+
+1. Push frontend code to GitHub
+2. Go to:
+
+[https://vercel.com](https://vercel.com)
+
+3. Import your GitHub repository
+4. Select the frontend folder
+5. Add environment variables if needed
+6. Click Deploy
+
+---
+
+## ⚙️ Backend Deployment (Render)
+
+### 1️⃣ Push Backend to GitHub
+
 Make sure your backend folder contains:
 
+```bash
 package.json
 server.js
 .env (NOT pushed)
-2️⃣ Create Render Account
+```
+
+---
+
+### 2️⃣ Create Render Account
+
 Go to:
 
-https://render.com
+[https://render.com](https://render.com)
 
 Login using GitHub.
 
-3️⃣ Create New Web Service
-Click "New +"
-Select "Web Service"
-Connect your GitHub repository
-Select your Job_Hunt repository
-4️⃣ Configure Render Settings
-Setting	Value
-Name	job-hunt-backend
-Environment	Node
-Root Directory	backend
-Build Command	npm install
-Start Command	npm start
-5️⃣ Add Environment Variables
+---
+
+### 3️⃣ Create New Web Service
+
+* Click "New +"
+* Select "Web Service"
+* Connect your GitHub repository
+* Select your Job_Hunt repository
+
+---
+
+### 4️⃣ Configure Render Settings
+
+| Setting        | Value            |
+| -------------- | ---------------- |
+| Name           | job-hunt-backend |
+| Environment    | Node             |
+| Root Directory | backend          |
+| Build Command  | npm install      |
+| Start Command  | npm start        |
+
+---
+
+### 5️⃣ Add Environment Variables
+
 Inside Render Dashboard → Environment Variables:
 
+```env
 PORT=5000
 MONGO_URI=your_mongodb_connection
 OPENAI_API_KEY=your_openai_api_key
+```
 
-6️⃣ Deploy Backend
+---
+
+### 6️⃣ Deploy Backend
+
 Click:
+
+```bash
 Create Web Service
+```
+
 Render will automatically:
-Install dependencies
-Build project
-Start backend server
-7️⃣ Backend Live URL
+
+* Install dependencies
+* Build project
+* Start backend server
+
+---
+
+### 7️⃣ Backend Live URL
+
 Example:
+
+```bash
 https://job-hunt-backend.onrender.com
+```
 
-🗄️ Database Deployment
-MongoDB Atlas
-Create free cluster
-Create database user
-Whitelist IP:
+---
+
+## 🗄️ Database Deployment
+
+### MongoDB Atlas
+
+1. Create free cluster
+2. Create database user
+3. Whitelist IP:
+
+```bash
 0.0.0.0/0
-Copy MongoDB connection string
-Add it inside Render Environment Variables
+```
 
-🔗 Connect Frontend to Backend
-Inside frontend .env:
+4. Copy MongoDB connection string
+5. Add it inside Render Environment Variables
 
+---
+
+## 🔗 Connect Frontend to Backend
+
+Inside frontend `.env`:
+
+```env
 REACT_APP_API_URL=https://job-hunt-backend.onrender.com
-⚠️ Important Deployment Notes
-Never upload .env files to GitHub
-Keep API keys private
-Use HTTPS APIs only
-Enable CORS in backend
-Add node_modules/ to .gitignore
+```
 
-🧩 Recommended Deployment Stack
-Service	Platform
-Frontend	Vercel
-Backend	Render
-Database	MongoDB Atlas
-Authentication	JWT
-AI Services	OpenAI API
-Database
+---
 
-MongoDB Atlas
-📸 Screenshots
+## ⚠️ Important Deployment Notes
+
+* Never upload `.env` files to GitHub
+* Keep API keys private
+* Use HTTPS APIs only
+* Enable CORS in backend
+* Add `node_modules/` to `.gitignore`
+
+---
+
+## 🧩 Recommended Deployment Stack
+
+| Service        | Platform      |
+| -------------- | ------------- |
+| Frontend       | Vercel        |
+| Backend        | Render        |
+| Database       | MongoDB Atlas |
+| Authentication | JWT           |
+| AI Services    | OpenAI API    |
+
+---
+
+## Database
+
+* MongoDB Atlas
+
+---
+
+# 📸 Screenshots
+
 Add your project screenshots here.
+
+```md
 /screenshots/dashboard.png
 /screenshots/login.png
 /screenshots/job.png
+```
 
-🧪 Future Enhancements
-Resume Parsing
-LinkedIn Integration
-Email Automation
-AI Interview Bot
-Mobile Application
-Advanced Analytics
+---
 
-🤝 Contributing
+# 🧪 Future Enhancements
+
+* Resume Parsing
+* LinkedIn Integration
+* Email Automation
+* AI Interview Bot
+* Mobile Application
+* Advanced Analytics
+
+---
+
+# 🤝 Contributing
+
 Contributions are welcome.
 
-Fork the repository
-Create a new branch
-Commit your changes
-Push to your branch
-Open a Pull Request
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
 
-📄 License
+---
+
+# 📄 License
+
 This project is licensed under the MIT License.
 
-👨‍💻 Author
+---
+
+# 👨‍💻 Author
+
 Developed by Sreelatha Budda
 
-GitHub: https://github.com/buddasreelatha57
+GitHub: [https://github.com/buddasreelatha57](https://github.com/buddasreelatha57)
 
-⭐ Support
+---
+
+# ⭐ Support
+
 If you like this project, please give it a star on GitHub ⭐
+
