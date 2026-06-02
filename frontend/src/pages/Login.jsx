@@ -54,7 +54,7 @@ export default function Login() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://127.0.0.1:5000/api/auth/login",
+        "https://job-hunt-kpht.onrender.com/api/auth/login",
         form
       );
 

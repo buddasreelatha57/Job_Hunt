@@ -49,7 +49,7 @@ export default function Jobs() {
     try {
 
       const res = await axios.get(
-        "http://127.0.0.1:5000/api/jobs"
+        "https://job-hunt-kpht.onrender.com/api/jobs"
       );
 
       const savedJobs =

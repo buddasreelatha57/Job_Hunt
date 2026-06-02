@@ -56,7 +56,7 @@ export default function Register() {
       }
 
       const res = await axios.post(
-        "http://127.0.0.1:8000/send-otp",
+        "https://job-hunt-kpht.onrender.com/send-otp",
         {
           phone: form.telegramPhone
         }
@@ -93,7 +93,7 @@ export default function Register() {
     try {
 
       const res = await axios.post(
-        "http://127.0.0.1:8000/verify-otp",
+        "https://job-hunt-kpht.onrender.com/verify-otp",
         {
           phone: form.telegramPhone,
           code: otp
@@ -139,7 +139,7 @@ export default function Register() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://127.0.0.1:5000/api/auth/register",
+        "https://job-hunt-kpht.onrender.com/api/auth/register",
         form
       );
 

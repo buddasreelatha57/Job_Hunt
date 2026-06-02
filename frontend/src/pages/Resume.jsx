@@ -78,7 +78,7 @@ export default function Resume() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/ai/ats",
+        "https://job-hunt-kpht.onrender.com/api/ai/ats",
         formData
       );
 
@@ -131,7 +131,7 @@ export default function Resume() {
           );
 
         const res = await axios.post(
-          "http://localhost:5000/api/ai/check-stored-resume",
+          "https://job-hunt-kpht.onrender.com/api/ai/check-stored-resume",
           {
             resumeText,
             jobDescription
@@ -178,7 +178,7 @@ export default function Resume() {
         );
 
         const res = await axios.post(
-          "http://localhost:5000/api/ai/job-ats",
+          "https://job-hunt-kpht.onrender.com/api/ai/job-ats",
           formData
         );
 
@@ -225,7 +225,7 @@ export default function Resume() {
         );
 
       const res = await axios.post(
-        "http://localhost:5000/api/ai/improve",
+        "https://job-hunt-kpht.onrender.com/api/ai/improve",
         {
           resumeText,
           role,
